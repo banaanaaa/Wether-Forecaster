@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Whether forecaster</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div id="gradient">
+            <h1>WHETHER FORECASTER</h1>
+            <div class="input">
+                <div class="input-block">
+                    <input class="city-input" type="text" placeholder="Enter some city...">
+                    <div class="error"></div>
+                    <div class="round"></div>
+                </div>
+                <button class="button">Check the weather</button>
+            </div>
+
+            <div class="info">
+                <header>
+                    <div class="main-info">
+                        <h2 class="city-name"></h2>
+                        <span class="coords"></span><br>
+                        <span class="weather"></span>
+                        <span class="description"></span>
+                    </div>
+                </header>
+                <ul>
+                    <li>Temperature: <span class="temp"></span>°C</li>
+                    <li>Pressure: <span class="press"></span> hPa</li>
+                    <li>Humidity: <span class="humidity"></span> %</li>
+                    <li>Wind speed: <span class="wind"></span> m/s</li>
+                    <li>Cloudiness: <span class="cloud"></span> %</li>
+                </ul>
+            </div>
+    </div>
+    <script src="js/view.js"></script>
+    <script src="js/model.js"></script>
+</body>
+</html>
